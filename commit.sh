@@ -1,10 +1,9 @@
+git status
 git add .
 
-echo 'Enter the commit message:'
-read commitMessage
+echo '> commit message:'
+read message
 
-git commit -m "$commitMessage"
+git commit -m "$message"
 
 git push origin master
-
-read
