@@ -30,12 +30,12 @@ let array = [{
         }
     ];
 
-array.reduce((obj, atual) => {
-    obj[atual.key] = atual.value;
+array.reduce((obj, curr) => {
+    obj[curr.key] = curr.value;
     return obj;
 }, {});
 
-array.reduce((obj, atual) => ({...obj, [atual.key]: atual.value}), {});
+array.reduce((obj, curr) => ({...obj, [curr.key]: curr.value}), {});
 
 /*
     {
