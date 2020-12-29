@@ -1,6 +1,7 @@
 #!/bin/bash
 # Automate commit process
 
+
 git status
 git add .
 
