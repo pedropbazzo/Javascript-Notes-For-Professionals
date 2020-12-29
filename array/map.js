@@ -4,12 +4,12 @@
     map()
 */
 
-['one', 'two', 'tree', 'four'].map((val, idx, arr) => {
+['one', 'two', 'three', 'four'].map((val, idx, arr) => {
     return val.length;
 })
 
 
-['one', 'two', 'tree', 'four'].map((val, idx, arr) =>  val.length )
+['one', 'two', 'three', 'four'].map((val, idx, arr) =>  val.length )
 
 
 /*
@@ -21,6 +21,6 @@
 
 */
 
-['one', 'two', 'tree', 'four'].map((val, idx, arr) => {
+['one', 'two', 'three', 'four'].map((val, idx, arr) => {
     console.log(`value: ${val}, index: ${idx}, entire: ${arr}`)
 })

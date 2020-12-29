@@ -25,7 +25,7 @@ let array = [{
             key: 'two',
             value: 2
         }, {
-            key: 'tree',
+            key: 'three',
             value: 3
         }
     ];
@@ -41,7 +41,7 @@ array.reduce((obj, curr) => ({...obj, [curr.key]: curr.value}), {});
     {
         one: 1,
         two: 2,
-        tree: 3
+        three: 3
     }
 
 */
