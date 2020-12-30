@@ -16,31 +16,31 @@ do
         "feat:")
             git commit -m "feat: $message"
             git push origin master
-            echo '> feat successfull commited 🔥'
+            echo '> feat successful commited 🔥'
             break
             ;;
         "add:")
             git commit -m "add: $message"
             git push origin master
-            echo '> add successfull commited ⚡'
+            echo '> add successful commited ⚡'
             break
             ;;
         "fix:")
             git commit -m "fix: $message"
             git push origin master
-            echo '> fix successfull commited 🐛'
+            echo '> fix successful commited 🐛'
             break
             ;;
         "refact:")
             git commit -m "refact: $message"
             git push origin master
-            echo '> refact successfull commited 🚧'
+            echo '> refact successful commited 🚧'
             break
             ;;
         "chore:")
             git commit -m "chore: $message"
             git push origin master
-            echo '> chore successfull commited 😎'
+            echo '> chore successful commited 😎'
             break
             ;;
         "Quit")
