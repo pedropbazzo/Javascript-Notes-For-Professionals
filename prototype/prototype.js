@@ -1,10 +1,12 @@
 /*
+
     ** Protótipos, objetos **
 
     No JS convencional, não há classe, em vez disso, temos protótipos. Como a classe, o protótipo herda o
     propriedades incluindo os métodos e as variáveis declaradas na classe. Podemos criar a nova instância do
     objeto sempre que for necessário por, Object.create (PrototypeName); (podemos dar o valor para o construtor como
     bem)
+    
 */
 
 // Criação e inicialização do protótipo
