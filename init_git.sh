@@ -11,5 +11,7 @@ git commit -m "init repository"
 
 echo 'repo name:'
 read repo
-git remote add origin git@github.com:brenogcota/$repo.git
+echo 'user name:'
+read user
+git remote add origin git@github.com:$user/$repo.git
 git push -u origin master
