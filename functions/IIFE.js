@@ -21,3 +21,33 @@ logo após a chave de fechamento: */
     alert("This is IIFE too.");
 })();
    
+//Você pode facilmente passar parâmetros para um IIFE:
+(function(message) {
+    alert(message);
+}("Hello World!"));
+   
+// Além disso, você pode retornar valores para o escopo circundante:
+var example = (function() {
+    return 42;
+   }());
+console.log(example); // => 42
+
+/*
+    Se necessário, é possível nomear um IIFE. Embora seja visto com menos frequência, esse padrão tem várias vantagens, como
+    fornecer uma referência que pode ser usada para uma recursão e pode tornar a depuração mais simples, pois o nome é incluído
+    na pilha de chamadas.
+*/
+(function namedIIFE() {
+    throw error; // We can now see the error thrown in 'namedIIFE()'
+}());
+   
+
+/*
+    Embora envolver uma função entre parênteses seja a maneira mais comum de denotar para o analisador JavaScript esperar um
+    expressão, em locais onde uma expressão já é esperada, a notação pode ser mais concisa:
+*/
+var a = function() { return 42 }();
+console.log(a) // => 42
+
+// Versão arrow function imediatamente invocada:
+(() => console.log("Hello!"))(); // => Hello!
