@@ -73,3 +73,29 @@ arr.reduce((prev, number) => {
 
 // => [1, 2, 5, 9]
 
+
+
+
+// Criando nosso proprio reduce
+var s = [3, 5];
+
+Array.prototype.myReduce = function(callback, initial) {
+    var i = 0;
+    // A partir do array voce chama a função de callback passando cada item, 
+    // por fim retorna o valor retornado do callback
+  
+    if(!initial) {
+        i = 1;
+        initial = this[0];
+    }
+    for(; i < this.length; i++) {
+        initial = callback(initial, this[i])
+    }   
+    
+    return initial;
+};
+
+var new_s = s.myReduce(function(acc, curr) {
+  return acc * curr;
+}, 1);
+
