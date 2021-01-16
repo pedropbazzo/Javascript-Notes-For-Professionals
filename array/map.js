@@ -24,3 +24,24 @@
 ['one', 'two', 'three', 'four'].map((val, idx, arr) => {
     console.log(`value: ${val}, index: ${idx}, entire: ${arr}`)
 })
+
+
+// Criar nosso proprio metodo map
+var s = [23, 65, 98, 5];
+
+Array.prototype.myMap = function(callback) {
+  var newArray = [];
+  // A partir do array voce chama a função de callback passando cada item, 
+  // por fim adiciona o novo valor a um novo array
+  for(let i = 0; i < this.length; i++) {
+    newArray.push(callback(this[i]));
+  }
+
+
+  
+  return newArray;
+};
+
+var new_s = s.myMap(function(item) {
+  return item * 2;
+});
