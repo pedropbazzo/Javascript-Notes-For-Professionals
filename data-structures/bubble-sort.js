@@ -21,15 +21,12 @@ bubbleSort([5, 10, 2, 7, 4, 20, 0])
 
 
 function _bubbleSort(list){
-    let swapped = false,
-        i,
-        count = 0
+    let swapped = false
     
     do {
         swapped = false
         
         list.forEach((item, idx) => {
-            count++
 
             if(item > list[idx+1]){
                 const aux = item

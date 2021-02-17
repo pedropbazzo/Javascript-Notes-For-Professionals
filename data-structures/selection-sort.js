@@ -33,3 +33,34 @@ function selectionSort(list) {
 
 selectionSort([1, 3, 2, 5])
 // output: [1, 2, 3, 5]
+
+function _selectionSort(list) {
+    let swapped = false,
+        i = 0,
+        n = list.length
+
+    do {
+        swapped = false
+        let min = i
+
+        for(let j = i+1; j < n; j++) {
+            if(list[j] < list[min]) 
+                min = j
+                swapped = true
+
+        }
+
+        if(min != i) {
+            let aux = list[i]
+            list[i] = list[min]
+            list[min] = aux
+        }
+
+        i++
+        
+    } while (swapped)
+
+    return list
+}
+
+_selectionSort([1, 3, 2, 5])
