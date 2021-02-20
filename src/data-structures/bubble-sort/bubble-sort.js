@@ -43,3 +43,5 @@ function _bubbleSort(list){
 
 _bubbleSort([5, 10, 2, 7, 4, 20, 0])
 // output: [0, 2, 4, 5, 7, 10, 20]
+
+module.exports = bubbleSort;

@@ -64,3 +64,6 @@ function _selectionSort(list) {
 }
 
 _selectionSort([1, 3, 2, 5])
+
+
+module.exports = selectionSort;
