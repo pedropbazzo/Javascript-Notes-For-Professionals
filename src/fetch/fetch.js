@@ -77,6 +77,7 @@ fetch('https://otherdomain.com/login', {
     cabeçalhos.
 
 */
+
 fetch('/path/to/resource.json')
     .then(response => {
         if (!response.ok()) {
